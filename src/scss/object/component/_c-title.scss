@@ -1,0 +1,23 @@
+.c-title {
+  text-align: center;
+  h3 {
+    font-size: 42px;
+    @include fontPlayFair(700);
+    color: $colorWhite;
+  }
+  p {
+    font-size: 16px;
+    margin-top: 30px;
+    opacity: 0.7;
+    @include fontmuli(300);
+    color: $colorWhite;
+  }
+  &--contact {
+    text-align: start;
+    p {
+      text-align: start;
+      font-size: 18px;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.c-btn {
+  margin: 50px;
+  width: 196px;
+  border: 1px solid $colorBlack;
+  a {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: $colorBlack;
+    @include fontmuli();
+    font-size: 16px;
+    span {
+      padding: 15px;
+      width: 100%;
+    }
+    img {
+      padding: 12px;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+.c-btn.c-btn__primary {
+  a {
+    span {
+      background-color: $colorOrange;
+    }
+    img {
+      background-color: $colorDarkOrange;
+    }
+  }
+}
