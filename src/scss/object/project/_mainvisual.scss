@@ -1,0 +1,39 @@
+.mainvisual {
+    background-image: url(../img/mainvisual_bg.png);
+    height: 905px;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    // background-repeat: no-repeat;
+    // background-position: bottom;
+    &__inner {
+        margin-bottom: 16%;
+        padding-left: 100px;
+        position: relative;
+        h1 {
+            font-family: "Playfair Display", serif;;
+            font-size: 64px;
+            font-weight: 600;
+            color: $colorWhite;
+            // h1::before {
+            //     content: "";
+            //     position: absolute;
+            //     width: 140px;
+            //     bottom: 0;
+            //     left: 50%;
+            //     margin-left: -70px;
+            //     height: 1px;
+            //     background: $colorWhite;
+            // }
+        }
+        p {
+            @include fontmuli();
+            font-size: 18px;
+            color: $colorWhite;
+            padding: 30px 0;
+          
+        }
+    }
+}

@@ -1,0 +1,35 @@
+// .about {
+//     max-width: 1163px;
+//     margin: 0 auto;
+//     display: flex;
+//     &__bloc {
+//         // display: flex;
+//         max-width: 100%;
+//         background-color: $colorBlack;
+//         padding: 50px 0 ;
+//         &__txt {
+            
+//             h2 {
+//                 @include fontPlayFair($weight: 400);
+//                 font-size: 42px;
+//                 color: $colorWhite;
+//                 padding: 20px;
+//             }
+//             p {
+//                 @include fontmuli();
+//                 font-size: 16px;
+//                 color: $colorWhite;
+//                 padding: 20px;
+//                 line-height: 30px;
+//             }
+//             }
+//             .expir {
+//                 color: $colorWhite;
+//             }
+            
+//         }
+//         .about__img {
+//             height: 783px;
+//         }
+        
+//     }
