@@ -31,16 +31,18 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        p {
-          text-align: center;
-          @include fontPlayFair(300);
-          font-size: 42px;
-          color: $colorWhite;
-        }
-        span {
-          @include fontmuli(300);
-          font-size: 18px;
-          color: $colorWhite;
+        .trips {
+          p {
+            text-align: center;
+            @include fontPlayFair(300);
+            font-size: 42px;
+            color: $colorWhite;
+          }
+          span {
+            @include fontmuli(300);
+            font-size: 18px;
+            color: $colorWhite;
+          }
         }
       }
       .c-btn.c-btn {

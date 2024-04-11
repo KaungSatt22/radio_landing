@@ -1,73 +1,73 @@
-.aboutTravel {
+.p-travel {
   margin-top: 200px;
-}
-
-.travel {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-
-  .travel-bloc {
-    width: calc(100% / 3 - 87px);
-
-    &:nth-of-type(3n + 3),
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .txt-box {
-    background-color: #1f242e;
-
-    padding: 30px;
-    p {
-      color: $colorWhite;
-      // margin: 10px 0px;
-      @include fontmuli();
-      font-size: 18px;
-    }
-    &__photo {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      margin-bottom: 10px;
-
-      img {
-        width: 28px;
-      }
-      p {
-        font-size: 14px;
-        @include fontmuli();
-      }
-    }
-    &__logo {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 10px;
-
-      img {
-        width: 28px;
-      }
-      p {
-        font-size: 14px;
-        @include fontmuli();
-      }
-    }
-  }
-}
-@media screen and (max-width: 900px) {
-  .aboutTravel {
-    padding: 0 20px;
-  }
   .travel {
-    flex-direction: column;
-    align-items: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
 
     .travel-bloc {
-      width: 100%;
+      width: calc(100% / 3 - 87px);
+
+      &:nth-of-type(3n + 3),
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .txt-box {
+      background-color: #1f242e;
+
+      padding: 30px;
+      p {
+        color: $colorWhite;
+        // margin: 10px 0px;
+        @include fontmuli();
+        font-size: 18px;
+      }
+      &__photo {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 10px;
+
+        img {
+          width: 28px;
+        }
+        p {
+          font-size: 14px;
+          @include fontmuli();
+        }
+      }
+      &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+        img {
+          width: 28px;
+        }
+        p {
+          font-size: 14px;
+          @include fontmuli();
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .p-travel {
+    padding: 0 20px;
+    .travel {
+      flex-direction: column;
+      align-items: center;
+
+      .travel-bloc {
+        width: 100%;
+      }
     }
   }
 }
