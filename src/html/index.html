@@ -13,11 +13,11 @@
   <body>
 
     <!-- nav-bar -->
-    <div class="l-wrapper l-header">
+    <div class="bg-color">
 
     
-    <header class="l-header--out">
-        <div class="l-header__navbar">
+    <header class="l-header">
+        <div class="l-header__navbar l-wrapper">
           <div class="l-header__title">
             <h1>
               <a href="#">Radio.</a>
@@ -25,7 +25,7 @@
           </div>
             <nav class="l-header__menu">
               <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Blog</a></li>
@@ -36,23 +36,29 @@
               
               </ul>
             </nav>
+            <div class="hamburger">
+              <div class="line"> </div>
+            </div>
         </div>
     
     </header>
   </div>
     <!-- Mainvisual -->
     <section class="mainvisual">
-      <div class="mainvisual__inner">
-        <h1>The new way to plan <br> your next adventure</h1>
+      
+      <div class="l-wrapper mainvisual__inner">
+        
+          <h1>The new way to plan <br> your next adventure</h1>
         <p>Explore the colourful world</p>
-        <div class="c-btn c-btn__primary">
+        <div class="c-btn c-btn--primary">
           <a href="#">
             <span>Explore more</span>
             <img src="../img/explore.png" alt="explore" />
           </a>
         </div>
+  
       </div>
-      
+  
     </section>
 
     <main>
@@ -62,26 +68,28 @@
         <div class="about__bloc">
           <div class="about__bloc__txt">
             <h2>About Us</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At animi libero in laudantium fugiat maiores distinctio harum, fuga itaque deserunt ipsa labore, minima iure nihil a cumque, ducimus quas corporis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, illo modi. Harum, quos saepe? Saepe vero neque voluptatem repellat eaque similique, eum aliquam dolore consequuntur fuga quaerat cupiditate nostrum laborum.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> At animi libero in laudantium fugiat maiores distinctio harum, <br> fuga itaque deserunt ipsa labore, minima iure nihil a cumque, <br> ducimus quas corporis? Lorem ipsum dolor sit, <br> amet consectetur adipisicing elit. <br> Incidunt, illo modi. Harum, quos saepe? <br> Saepe vero neque voluptatem repellat eaque similique.</p>
           </div>
-            <div class="expir">
+            <div class="experi">
+               <div class="experi__list">
               <div class="completed-trips">
                 <p>268</p>
-                <p>Completed Trips</p>
+                <span>Completed Trips</span>
               </div>
               <div class="tour-guides">
                 <p>176</p>
-                <p>Tour Guides</p>
+                <span>Tour Guides</span>
               </div>
               <div class="destination">
                 <p>153</p>
-                <p>Destinations</p>
+                <span>Destinations</span>
               </div>
+               </div>
             </div>
-            <div class="c-btn c-btn__primary">
+            <div class="c-btn c-btn--primary c-btn--about">
               <a href="#">
-                <span>Explore more</span>
-                <img src="../img/explore.png" alt="explore" />
+                <span>Read More</span>
+                <img src="../img/discover_read.png" alt="arrow" />
               </a>
             </div>
         </div>
@@ -92,9 +100,10 @@
     </main>
 
     
-    <footer>
-      <div class="l-footer">
-        <h3>Radio.</h3>
+    <footer class="l-footer l-wrapper">
+      <div class="l-footer__title">
+      <h3>Radio.</h3>
+      </div>
         <div class="app-icon">
           <a href="#"><img src="../img/facebook.png" alt=""></a>
           <a href="#"><img src="../img/instagram.png" alt=""></a>
@@ -113,7 +122,9 @@
             <li><a href="#">Contacts</a></li>
           </ul>
         </div>
-      </div>
+
+        <div class="line"></div>
+        <address>&copy; 2022 all Right Reserved</address>
     </footer>
   </body>
 </html>
