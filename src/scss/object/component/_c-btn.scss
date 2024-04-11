@@ -1,7 +1,6 @@
 .c-btn {
-  margin: 50px;
   width: 196px;
-  border: 1px solid $colorBlack;
+  border: 1px solid $colorWhite;
   a {
     display: flex;
     align-items: center;
@@ -14,19 +13,39 @@
       width: 100%;
     }
     img {
-      padding: 12px;
+      padding: 15px;
       width: auto;
       height: auto;
     }
   }
-}
-.c-btn.c-btn__primary {
-  a {
-    span {
-      background-color: $colorOrange;
+  &--discover {
+    a {
+      span {
+        color: $colorWhite;
+        background-color: $colorBlack;
+      }
+      img {
+        background-color: $colorBlack;
+      }
     }
-    img {
-      background-color: $colorDarkOrange;
+  }
+
+  &--view {
+    border: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 235px;
+    margin-top: 60px;
+    a {
+      span {
+        background-color: $colorOrange;
+      }
+      img {
+        background-color: $colorDarkOrange;
+      }
     }
+  }
+  &:hover {
+    border: 2px solid $colorWhite;
   }
 }
