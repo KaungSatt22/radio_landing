@@ -1,0 +1,15 @@
+.radio {
+  margin: 200px 0;
+  &__img {
+    margin: 0 auto;
+    width: 648.84px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .radio {
+    padding: 0 20px;
+    &__img {
+      width: auto;
+    }
+  }
+}

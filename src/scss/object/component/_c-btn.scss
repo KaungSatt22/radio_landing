@@ -1,0 +1,51 @@
+.c-btn {
+  width: 196px;
+  border: 1px solid $colorWhite;
+  a {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: $colorBlack;
+    @include fontmuli();
+    font-size: 16px;
+    span {
+      padding: 15px;
+      width: 100%;
+    }
+    img {
+      padding: 15px;
+      width: auto;
+      height: auto;
+    }
+  }
+  &--discover {
+    a {
+      span {
+        color: $colorWhite;
+        background-color: $colorBlack;
+      }
+      img {
+        background-color: $colorBlack;
+      }
+    }
+  }
+
+  &--view {
+    border: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 235px;
+    margin-top: 60px;
+    a {
+      span {
+        background-color: $colorOrange;
+      }
+      img {
+        background-color: $colorDarkOrange;
+      }
+    }
+  }
+  &:hover {
+    border: 2px solid $colorWhite;
+  }
+}
