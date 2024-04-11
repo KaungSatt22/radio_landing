@@ -2,6 +2,12 @@ import "../scss/style.scss";
 import $ from "jquery";
 import "slick-carousel";
 
+let btn = document.querySelector(".hamburger");
+let navbar = document.querySelector(".l-header__menu ul");
+btn.addEventListener("click", ()=> {
+    navbar.classList.toggle("show")
+})
+
 $(".gallery__slider").slick({
   centerMode: true,
   infinite: true,

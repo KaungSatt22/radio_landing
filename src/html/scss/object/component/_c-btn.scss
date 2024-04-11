@@ -1,0 +1,49 @@
+.c-btn {
+    margin: 0px;
+    width: 196px;
+    border: 1px solid $colorBlack;
+    a {
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      color: $colorBlack;
+      @include fontmuli();
+      font-size: 16px;
+      span {
+        padding: 15px;
+        width: 100%;
+      }
+      img {
+        padding: 12px;
+        width: auto;
+        height: auto;
+      }
+    }
+    &--primary {
+      border: none;
+    margin-top: 64px;
+    a {
+      span {
+        background-color: $colorOrange;
+      }
+      img {
+        background-color: $colorDarkOrange;
+      }
+    }
+    }
+    &--about {
+      margin-top: 203px;
+      a {
+        img {
+          padding: 15px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:900px) {
+    .c-btn--about {
+      margin: 20px auto;
+      
+    }
+  }

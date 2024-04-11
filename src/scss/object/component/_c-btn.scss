@@ -1,6 +1,7 @@
 .c-btn {
   width: 196px;
   border: 1px solid $colorWhite;
+  transition: all 0.5s ease;
   a {
     display: flex;
     align-items: center;
@@ -18,6 +19,22 @@
       height: auto;
     }
   }
+  &--primary {
+    border: none;
+    margin-top: 64px;
+    background-color: $colorOrange;
+    a {
+      span {
+        
+        padding: 16px;
+      }
+      img {
+        background-color: $colorDarkOrange;
+      }
+    }
+    
+  }
+  
   &--discover {
     a {
       span {
@@ -44,8 +61,29 @@
         background-color: $colorDarkOrange;
       }
     }
+    }
+    &--about {
+      margin-top: 203px;
+      background-color: $colorOrange;
+      a {
+        img {
+          background-color: $colorDarkOrange;
+        }
+      }
+    }
+
+    &:hover {
+      a {
+        span {
+          color: $colorGray;
+        }
+      }
+    }
   }
-  &:hover {
-    border: 2px solid $colorWhite;
+
+  @media screen and (max-width:900px) {
+    .c-btn--about {
+      margin: 20px auto;
+      
+    }
   }
-}
