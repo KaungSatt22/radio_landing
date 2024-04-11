@@ -8,5 +8,6 @@
 }
 @mixin fontPlayFair($weight: 400) {
   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
   font-weight: $weight;
 }
