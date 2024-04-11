@@ -1,27 +1,58 @@
 .c-btn {
-    margin: 0px;
-    width: 196px;
-    border: 1px solid $colorBlack;
+  width: 196px;
+  border: 1px solid $colorWhite;
+  transition: all 0.5s ease;
+  a {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: $colorBlack;
+    @include fontmuli();
+    font-size: 16px;
+    span {
+      padding: 15px;
+      width: 100%;
+    }
+    img {
+      padding: 15px;
+      width: auto;
+      height: auto;
+    }
+  }
+  &--primary {
+    border: none;
+    margin-top: 64px;
+    background-color: $colorOrange;
     a {
-      display: flex;
-      align-items: center;
-      border-radius: 10px;
-      color: $colorBlack;
-      @include fontmuli();
-      font-size: 16px;
       span {
-        padding: 15px;
-        width: 100%;
+        
+        padding: 16px;
       }
       img {
-        padding: 12px;
-        width: auto;
-        height: auto;
+        background-color: $colorDarkOrange;
       }
     }
-    &--primary {
-      border: none;
-    margin-top: 64px;
+    
+  }
+  
+  &--discover {
+    a {
+      span {
+        color: $colorWhite;
+        background-color: $colorBlack;
+      }
+      img {
+        background-color: $colorBlack;
+      }
+    }
+  }
+
+  &--view {
+    border: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 235px;
+    margin-top: 60px;
     a {
       span {
         background-color: $colorOrange;
@@ -33,9 +64,18 @@
     }
     &--about {
       margin-top: 203px;
+      background-color: $colorOrange;
       a {
         img {
-          padding: 15px;
+          background-color: $colorDarkOrange;
+        }
+      }
+    }
+
+    &:hover {
+      a {
+        span {
+          color: $colorGray;
         }
       }
     }
